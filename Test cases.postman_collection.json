@@ -1,0 +1,3307 @@
+{
+	"info": {
+		"_postman_id": "538a18d1-3dc7-47bc-a5c5-79119b262afa",
+		"name": "Test cases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "Get Appointment",
+					"item": [
+						{
+							"name": "/api/Appointment/GetAppointmentsByDeviceKey",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"id\": 0,\r\n    \"pin\": \"string\",\r\n    \"appointmentSteps\": [\r\n      {\r\n        \"id\": 0,\r\n        \"date\": \"2022-04-28T09:20:40\",\r\n        \"serviceProviderName\": \"string\",\r\n        \"specialization\": \"string\",\r\n        \"serviceName\": \"string\"\r\n      }\r\n    ],\r\n    \"branchInfo\": {\r\n      \"name\": \"string\",\r\n      \"address\": \"string\",\r\n      \"latitude\": 0,\r\n      \"longitude\": 0,\r\n      \"cityId\": 0,\r\n      \"countryId\": 0,\r\n      \"company\": {\r\n        \"name\": \"string\",\r\n        \"checkInKey\": \"string\",\r\n        \"imagePath\": \"string\",\r\n        \"categoryNames\": [\r\n          \"string\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Appointment/GetAppointmentsByDeviceKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Appointment",
+										"GetAppointmentsByDeviceKey"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Appointment/GetAppointmentsByDeviceKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Appointment",
+												"GetAppointmentsByDeviceKey"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": 91568965,\n    \"pin\": \"occaecat dolor\",\n    \"appointmentSteps\": [\n      {\n        \"id\": 62376737,\n        \"date\": \"1979-06-25T23:18:49.270Z\",\n        \"serviceProviderName\": \"irure laborum Lorem\",\n        \"specialization\": \"pariatur minim ea occaecat nisi\",\n        \"serviceName\": \"nostrud amet aliqu\"\n      },\n      {\n        \"id\": -84274372,\n        \"date\": \"1965-04-02T00:57:07.450Z\",\n        \"serviceProviderName\": \"veniam Lorem\",\n        \"specialization\": \"Excepteur velit Ut aliquip\",\n        \"serviceName\": \"et Ut commodo\"\n      }\n    ],\n    \"branchInfo\": {\n      \"name\": \"reprehenderit in\",\n      \"address\": \"consequat Lorem sed\",\n      \"latitude\": 54108264.08439502,\n      \"longitude\": -98295253.04818079,\n      \"cityId\": -42704907,\n      \"countryId\": -84954136,\n      \"company\": {\n        \"name\": \"aliquip consequat\",\n        \"checkInKey\": \"voluptate consequat nostrud commodo\",\n        \"imagePath\": \"ea aliquip\",\n        \"categoryNames\": [\n          \"quis\",\n          \"nulla in magna velit anim\"\n        ]\n      }\n    }\n  },\n  {\n    \"id\": -10528566,\n    \"pin\": \"cupidatat ad Excepteur mollit reprehenderit\",\n    \"appointmentSteps\": [\n      {\n        \"id\": 80103685,\n        \"date\": \"2014-02-09T08:27:00.971Z\",\n        \"serviceProviderName\": \"esse eiusmod\",\n        \"specialization\": \"est\",\n        \"serviceName\": \"minim id sed\"\n      },\n      {\n        \"id\": 88175249,\n        \"date\": \"1994-04-14T03:02:36.981Z\",\n        \"serviceProviderName\": \"o\",\n        \"specialization\": \"dolor anim et dolor\",\n        \"serviceName\": \"non et elit ex\"\n      }\n    ],\n    \"branchInfo\": {\n      \"name\": \"irure eiusmod\",\n      \"address\": \"cupidatat\",\n      \"latitude\": 24533020.80386655,\n      \"longitude\": 21994158.49722807,\n      \"cityId\": -70931040,\n      \"countryId\": -20268147,\n      \"company\": {\n        \"name\": \"minim dolor Duis\",\n        \"checkInKey\": \"exercitation eu\",\n        \"imagePath\": \"id incididunt do\",\n        \"categoryNames\": [\n          \"culpa Ut ex commodo\",\n          \"esse sunt\"\n        ]\n      }\n    }\n  }\n]"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Appointment/GetAppointmentsByDeviceKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Appointment",
+												"GetAppointmentsByDeviceKey"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Appointment/GetAppointmentsByDeviceKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Appointment",
+												"GetAppointmentsByDeviceKey"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Industry",
+			"item": [
+				{
+					"name": "Get Industries - Positive",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test('Is an Array', () => pm.expect(pm.response.json()).to.be.an('array').but.not.an('object'))\r",
+									"pm.test('Is an Array', () => pm.expect(pm.response.json()).not.to.be.null)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Industry",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Industry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 1310199,\n    \"name\": \"exercitation\",\n    \"imagePath\": \"esse\"\n  },\n  {\n    \"id\": -20121797,\n    \"name\": \"amet elit\",\n    \"imagePath\": \"Lorem ut dolor enim\"\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Industries - Negative (Without Token)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Industry",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Industry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 1310199,\n    \"name\": \"exercitation\",\n    \"imagePath\": \"esse\"\n  },\n  {\n    \"id\": -20121797,\n    \"name\": \"amet elit\",\n    \"imagePath\": \"Lorem ut dolor enim\"\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Industry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Industry"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Culture",
+			"item": [
+				{
+					"name": "Get Culture - Positive",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test('Is an Array', () => pm.expect(pm.response.json()).to.be.an('array').but.not.an('object'))\r",
+									"pm.test('Is an Array', () => pm.expect(pm.response.json()).not.to.be.null)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Culture",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Culture"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -92124979,\n    \"code\": \"ut Lorem adipisicing\",\n    \"name\": \"do ad\",\n    \"nativeName\": \"commodo nulla Ut eu\"\n  },\n  {\n    \"id\": -18709648,\n    \"code\": \"est eu sed\",\n    \"name\": \"laborum\",\n    \"nativeName\": \"consectetur enim eu aute\"\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Culture - Negative (Without Token)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Culture",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Culture"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -92124979,\n    \"code\": \"ut Lorem adipisicing\",\n    \"name\": \"do ad\",\n    \"nativeName\": \"commodo nulla Ut eu\"\n  },\n  {\n    \"id\": -18709648,\n    \"code\": \"est eu sed\",\n    \"name\": \"laborum\",\n    \"nativeName\": \"consectetur enim eu aute\"\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Culture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Culture"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "Get Country",
+					"item": [
+						{
+							"name": "Get Counties - Armenian",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Country?Culture=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Country"
+									],
+									"query": [
+										{
+											"key": "Culture",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country?Culture=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country"
+											],
+											"query": [
+												{
+													"key": "Culture",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -37947743,\n    \"name\": \"velit adipisicing ullamco\",\n    \"imageURI\": \"ea irure ut dolor\",\n    \"isIndustryEnabled\": false,\n    \"code\": \"laborum officia mollit cupidatat\"\n  },\n  {\n    \"id\": 70251816,\n    \"name\": \"nostrud adipisicing enim\",\n    \"imageURI\": \"reprehenderit veniam in\",\n    \"isIndustryEnabled\": false,\n    \"code\": \"laboris id\"\n  }\n]"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country?Culture=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country"
+											],
+											"query": [
+												{
+													"key": "Culture",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country?Culture=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country"
+											],
+											"query": [
+												{
+													"key": "Culture",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Country/Locate",
+					"item": [
+						{
+							"name": "Locate the country",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Country/Locate?longitute=40.210731&latitude=44.474961",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Country",
+										"Locate"
+									],
+									"query": [
+										{
+											"key": "longitute",
+											"value": "40.210731"
+										},
+										{
+											"key": "latitude",
+											"value": "44.474961"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country/Locate?longitute=ut commodo&latitude=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country",
+												"Locate"
+											],
+											"query": [
+												{
+													"key": "longitute",
+													"value": "ut commodo"
+												},
+												{
+													"key": "latitude",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": 87754924,\n  \"name\": \"sit\",\n  \"imageURI\": \"laboris dolore\",\n  \"isIndustryEnabled\": false,\n  \"code\": \"Ut adipisicing id\"\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country/Locate?longitute=ut commodo&latitude=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country",
+												"Locate"
+											],
+											"query": [
+												{
+													"key": "longitute",
+													"value": "ut commodo"
+												},
+												{
+													"key": "latitude",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country/Locate?longitute=ut commodo&latitude=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country",
+												"Locate"
+											],
+											"query": [
+												{
+													"key": "longitute",
+													"value": "ut commodo"
+												},
+												{
+													"key": "latitude",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Country/Locate?longitute=ut commodo&latitude=ut commodo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Country",
+												"Locate"
+											],
+											"query": [
+												{
+													"key": "longitute",
+													"value": "ut commodo"
+												},
+												{
+													"key": "latitude",
+													"value": "ut commodo"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "Get City",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/City?CountryId=2&Culture=en",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"City"
+							],
+							"query": [
+								{
+									"key": "CountryId",
+									"value": "2"
+								},
+								{
+									"key": "Culture",
+									"value": "en"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/City?CountryId=-41513070&Culture=ut commodo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"City"
+									],
+									"query": [
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "Culture",
+											"value": "ut commodo"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -58601921,\n    \"name\": \"officia labore Ut\",\n    \"order\": 52195432\n  },\n  {\n    \"id\": 2075965,\n    \"name\": \"tempor ullamco\",\n    \"order\": -22274674\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/City?CountryId=-41513070&Culture=ut commodo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"City"
+									],
+									"query": [
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "Culture",
+											"value": "ut commodo"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/City?CountryId=-41513070&Culture=ut commodo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"City"
+									],
+									"query": [
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "Culture",
+											"value": "ut commodo"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Requested Companies(Negative)",
+			"item": [
+				{
+					"name": "Get Requested Companies(Invalid IndustryId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var industryId = pm.environment.get(\"industryId\")\r",
+									"var industryIds = pm.environment.get(\"industryIds\")\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"IndustryId\": [\r",
+									"            \"The value '\"+industryId+\"' is not valid for IndustryId.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"if(industryIds && industryIds.length > 0){\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Invalid IndustryId)\")\r",
+									"}else{\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Without IndustryId)\")\r",
+									"    pm.environment.unset(\"industryIds\")\r",
+									"    pm.environment.unset(\"industryId\")\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var industryIds = pm.environment.get(\"industryIds\")\r",
+									"\r",
+									"if (!industryIds) {\r",
+									"    var industryIds = [\"-1\", \"8888\", \"sdfref\", \"3.25\", \"-*/\", \"\"]\r",
+									"}\r",
+									"\r",
+									"var industryId = industryIds.shift()\r",
+									"pm.environment.set(\"industryIds\", industryIds)\r",
+									"pm.environment.set(\"industryId\", industryId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId={{industryId}}&LanguageCode=hy&CityId=2&CountryId=2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "{{industryId}}",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "2",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Without IndustryId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"IndustryId\": [\r",
+									"            \"The IndustryId field is required.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?LanguageCode=hy&CityId=2&CountryId=2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "2",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Invalid CityId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var cityId = pm.environment.get(\"cityId\")\r",
+									"var cityIds = pm.environment.get(\"cityIds\")\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"CityId\": [\r",
+									"            \"The value '\"+cityId+\"' is not valid for CityId.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"if(cityIds && cityIds.length > 0){\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Invalid CityId)\")\r",
+									"}else{\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Without CityId)\")\r",
+									"    pm.environment.unset(\"cityIds\")\r",
+									"    pm.environment.unset(\"cityId\")\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var cityIds = pm.environment.get(\"cityIds\")\r",
+									"\r",
+									"if (!cityIds) {\r",
+									"    var cityIds = [\"-88\", \"7579\", \"ryhrty\", \"9.25\", \"-*/\", \"\"]\r",
+									"}\r",
+									"\r",
+									"var cityId = cityIds.shift()\r",
+									"pm.environment.set(\"cityIds\", cityIds)\r",
+									"pm.environment.set(\"cityId\", cityId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CityId={{cityId}}&CountryId=2&LanguageCode=hy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "{{cityId}}",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Without CityId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"CityId\": [\r",
+									"            \"The CityId field is required.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CountryId=2&LanguageCode=hy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Invalid CountryId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var CountryId = pm.environment.get(\"CountryId\")\r",
+									"var CountryIds = pm.environment.get(\"CountryIds\")\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"CountryId\": [\r",
+									"            \"The value '\"+CountryId+\"' is not valid for CountryId.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"if(CountryIds && CountryIds.length > 0){\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Invalid CountryId)\")\r",
+									"}else{\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Without CountryId)\")\r",
+									"    pm.environment.unset(\"CountryIds\")\r",
+									"    pm.environment.unset(\"CountryId\")\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var CountryIds = pm.environment.get(\"CountryIds\")\r",
+									"\r",
+									"if (!CountryIds) {\r",
+									"    var CountryIds = [\"-88\", \"7579\", \"ryhrty\", \"9.25\", \"-*/\", \"\", \"  \"]\r",
+									"}\r",
+									"\r",
+									"var CountryId = CountryIds.shift()\r",
+									"pm.environment.set(\"CountryIds\", CountryIds)\r",
+									"pm.environment.set(\"CountryId\", CountryId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CityId=2&CountryId={{CountryId}}&LanguageCode=hy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "{{CountryId}}",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Without CountryId)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"CountryId\": [\r",
+									"            \"The CountryId field is required.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CityId=2&LanguageCode=hy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "hy",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Invalid LanguageCode)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var lCode = pm.environment.get(\"lCode\")\r",
+									"var lCodes = pm.environment.get(\"lCodes\")\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"LanguageCode\": [\r",
+									"            \"The value '\"+lCode+\"' is not valid for CountryId.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"if(lCodes && lCodes.length > 0){\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Invalid LanguageCode)\")\r",
+									"}else{\r",
+									"    postman.setNextRequest(\"Get Requested Companies(Without LanguageCode)\")\r",
+									"    pm.environment.unset(\"lCode\")\r",
+									"    pm.environment.unset(\"lCodes\")\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var lCodes = pm.environment.get(\"lCodes\")\r",
+									"\r",
+									"if (!lCodes) {\r",
+									"    var lCodes = [\"-88\", \"7579\", \"ryhrty\", \"9.25\", \"-*/\", \"\", \"  \"]\r",
+									"}\r",
+									"\r",
+									"var lCode = lCodes.shift()\r",
+									"pm.environment.set(\"lCodes\", lCodes)\r",
+									"pm.environment.set(\"lCode\", lCode)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CityId=2&CountryId=6&LanguageCode={{lCode}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "LanguageCode",
+									"value": "{{lCode}}",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Requested Companies(Without LanguageCode)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error is contained\", () => {\r",
+									"  const expectedObject = {\r",
+									"        \"LanguageCode\": [\r",
+									"            \"The LanguageCode field is required.\"\r",
+									"        ]\r",
+									"    };\r",
+									"  pm.expect(pm.response.json().errors).to.deep.include(expectedObject);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=6&CityId=2&CountryId=6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Company",
+								"GetRequestedCompanies"
+							],
+							"query": [
+								{
+									"key": "IndustryId",
+									"value": "6",
+									"description": "(Required) "
+								},
+								{
+									"key": "CityId",
+									"value": "2",
+									"description": "(Required) "
+								},
+								{
+									"key": "CountryId",
+									"value": "6",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -60047352,\n    \"name\": \"consequat in mollit\",\n    \"address\": \"consectetur sit\",\n    \"email\": \"incididunt\",\n    \"webSite\": \"nulla sit incididunt\",\n    \"isTemporaryDisabled\": false,\n    \"phones\": [\n      \"reprehenderit cupida\",\n      \"irure dolore nisi Ut\"\n    ],\n    \"type\": -16155940,\n    \"categoryNames\": [\n      \"irure sint Duis Lorem\",\n      \"nulla ut amet\"\n    ],\n    \"imagePath\": \"Duis aliqua\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"quis tempor proident et si\",\n    \"branchIds\": [\n      -21034271,\n      41380381\n    ]\n  },\n  {\n    \"id\": 3933535,\n    \"name\": \"Lorem Duis\",\n    \"address\": \"in laborum sit\",\n    \"email\": \"commodo reprehenderit\",\n    \"webSite\": \"in mollit cillum\",\n    \"isTemporaryDisabled\": true,\n    \"phones\": [\n      \"non eiusmod occaecat\",\n      \"cillum Ut amet proident\"\n    ],\n    \"type\": 99824128,\n    \"categoryNames\": [\n      \"incididunt irure\",\n      \"ipsum esse anim adipisicing\"\n    ],\n    \"imagePath\": \"ut\",\n    \"isForceEnabled\": false,\n    \"checkinKey\": \"ut anim\",\n    \"branchIds\": [\n      54637865,\n      29692717\n    ]\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"voluptate in\",\n  \"title\": \"est fugiat Duis\",\n  \"status\": -38847292,\n  \"detail\": \"laboris ipsum eu ad irure\",\n  \"instance\": \"magna ipsum consectetur Excepteur sint\"\n}"
+						},
+						{
+							"name": "Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "Authorization",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Company/GetRequestedCompanies?IndustryId=-41513070&LanguageCode=ut commodo&CityId=-41513070&CountryId=-41513070",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Company",
+										"GetRequestedCompanies"
+									],
+									"query": [
+										{
+											"key": "IndustryId",
+											"value": "-41513070"
+										},
+										{
+											"key": "LanguageCode",
+											"value": "ut commodo"
+										},
+										{
+											"key": "CityId",
+											"value": "-41513070"
+										},
+										{
+											"key": "CountryId",
+											"value": "-41513070"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
