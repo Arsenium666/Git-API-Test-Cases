@@ -767,7 +767,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/api/Country?Culture=",
+									"raw": "{{baseUrl}}/api/Country?Culture=hy",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -778,7 +778,7 @@
 									"query": [
 										{
 											"key": "Culture",
-											"value": ""
+											"value": "hy"
 										}
 									]
 								}
