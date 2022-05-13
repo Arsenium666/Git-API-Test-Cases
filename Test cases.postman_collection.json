@@ -1,5 +1,4 @@
 {
-
 	"info": {
 		"_postman_id": "538a18d1-3dc7-47bc-a5c5-79119b262afa",
 		"name": "Test cases",
@@ -219,7 +218,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"pin\": \"string\",\r\n    \"appointmentSteps\": [\r\n      {\r\n        \"id\": 0,\r\n        \"date\": \"2022-04-28T09:20:40\",\r\n        \"serviceProviderName\": \"string\",\r\n        \"specialization\": \"string\",\r\n        \"serviceName\": \"string\"\r\n      }\r\n    ],\r\n    \"branchInfo\": {\r\n      \"name\": \"string\",\r\n      \"address\": \"string\",\r\n      \"latitude\": 0,\r\n      \"longitude\": 0,\r\n      \"cityId\": 0,\r\n      \"countryId\": 0,\r\n      \"company\": {\r\n        \"name\": \"string\",\r\n        \"checkInKey\": \"string\",\r\n        \"imagePath\": \"string\",\r\n        \"categoryNames\": [\r\n          \"string\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]",
+									"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"pin\": \"string\",\r\n    \"appointmentSteps\": [\r\n      {\r\n        \"id\": 0,\r\n        \"date\": \"2022-05-12T09:20:40\",\r\n        \"serviceProviderName\": \"string\",\r\n        \"specialization\": \"string\",\r\n        \"serviceName\": \"string\"\r\n      }\r\n    ],\r\n    \"branchInfo\": {\r\n      \"name\": \"string\",\r\n      \"address\": \"string\",\r\n      \"latitude\": 0,\r\n      \"longitude\": 0,\r\n      \"cityId\": 0,\r\n      \"countryId\": 0,\r\n      \"company\": {\r\n        \"name\": \"string\",\r\n        \"checkInKey\": \"string\",\r\n        \"imagePath\": \"string\",\r\n        \"categoryNames\": [\r\n          \"string\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
